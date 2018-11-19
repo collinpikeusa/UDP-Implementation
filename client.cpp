@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <iostream>
 #include <fstream>
-#define SERVICE_PORT	1237
+#define SERVICE_PORT	2000
 #define BUFLEN 2048
 using namespace std;
 
@@ -74,7 +74,10 @@ int main(void)
         printf("received message: \"%s\"\n", buf);
 
     }
-
+    ofstream outfile;
+    outfile.open("output.txt");
+    outfile << buf;
+    outfile.close();
     close(fd);
     return 0;
 }

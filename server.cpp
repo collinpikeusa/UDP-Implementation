@@ -7,7 +7,7 @@
 #include <netinet/in.h>
 #include <string>
 
-#define SERVICE_PORT	1237
+#define SERVICE_PORT	2000
 #define BUFSIZE 2048
 using namespace std;
 
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
         string str(buf);
         str += "Signed: Bob (Seller)  Date: November 29, 2018.";
         strcpy(buf, str.c_str());
-        printf("sending response \"%s\"\n", buf);
+        printf("sending response \"%s\"", buf);
         if (sendto(fd, buf, BUFSIZE, 0, (struct sockaddr *)&remaddr, addrlen) < 0)
             perror("sendto");
     }

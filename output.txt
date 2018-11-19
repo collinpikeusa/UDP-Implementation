@@ -1,0 +1,4 @@
+Contract: This is an agreement between Alice (Buyer) and Bob (Seller) to purchase Property
+XYZ at Lake Martin, Alabama, for the price of $900,000.  Signed: Alice (Buyer)  Date: November 27,
+2018.
+Signed: Bob (Seller)  Date: November 29, 2018.
